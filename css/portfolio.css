@@ -1,0 +1,264 @@
+:root {
+    --primary: rgb(21, 49, 70);
+    --accent: #ffb300;
+}
+
+/* Start global styles */
+
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+        Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: var(--primary);
+    color: white;
+}
+
+p {
+    margin: 0px;
+    font-size: 2vmin;
+    line-height: 150%;
+}
+
+a {
+    color: var(--accent)
+}
+
+h1 {
+    font-size: 5.9vw;
+}
+
+h3 {
+    font-size: 2.5vh;
+}
+
+hr {
+    border: 2px solid white;
+    border-radius: 6px;
+}
+
+.container {
+    overflow: hidden;
+    padding: 6% 10vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center; 
+}
+
+.header {
+    margin: 5em 20%;
+}
+
+/* Start nav styles */
+
+nav {
+    z-index: 99;
+    border-bottom: 1px solid rgb(20, 38, 51);
+    background-color: var(--primary);
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    height: 40px;
+    padding-top: 10px;
+    opacity: 0.9;
+}
+
+nav a {
+    color: #f2f2f2;
+    text-align: center;
+    min-height: 6vh;
+    padding: 15px 0.5em;
+    text-decoration: none; 
+    font-size: 1.1em;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    top: 10px;
+    color: black;
+    transition: all ease 0.5s;
+}
+
+nav a.active {
+    border-bottom: 3px solid var(--accent);
+    color: white;
+}   
+
+/* Start home page (index) styles */
+
+.home {
+    background-image: url("../images/home-bg.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Start projects styles */
+
+.card {
+    border: 2px solid white;
+    border-radius: 6px;
+    padding: 5px 25px 25px 25px;
+    margin: 20px 0;
+}
+
+.card-content {
+    display: flex;
+}
+
+
+.project-img {
+    border-radius: 8px;
+    max-width: 375px;
+    width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.project-desc {
+    margin: 10px
+}  
+
+.landscape {
+    max-height: 250px;
+    /* margin-top: 50%; */
+}
+
+/* Start list styles */
+
+.styled-list {
+    list-style-type: none;
+    margin-right: 5px;
+    box-sizing: border-box;
+    padding: 1px;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 2.5rem;
+}
+
+.styled-list li {
+    margin: 5px;
+    background-color: var(--accent);
+    padding: 0 6px;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #424242; 
+}
+
+.styled-list a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #424242;
+}
+
+/* Start hobbies styles */
+
+.gallery-row {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+  
+.gallery-col {
+    flex: 25%;
+    max-width: 50%;
+    padding: 0 4px;
+}
+  
+.gallery-col img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery-col img:hover {
+    transform: scale(1.1);
+    transition: all ease 0.25s;
+}
+
+/* Start about styles */
+
+.about-main {
+    justify-content: center;
+    display: flex;
+    gap: 50px;
+}
+
+.avatar {
+    border-radius: 50%;
+    margin-top: 10%;
+    border: 6px solid var(--accent);
+}
+
+
+td {
+    border-radius: 5px;
+    text-align: center;
+    background-color: #212121bf;
+    padding: 10px;
+    height: 30px;
+    min-width: 60px
+}
+
+.table-check {
+    color: #424242;
+    padding: 4px 8px;
+    background-color: var(--accent);
+    border-radius: 50%;
+}
+
+/* Start medis queries */
+
+@media screen and (max-width: 800px) {
+    .gallery-col {
+      flex: 50%;
+      max-width: 50%;
+    }
+}
+  
+@media screen and (max-width: 600px) {
+    .gallery-col {
+      flex: 100%;
+      max-width: 100%;
+    }
+
+    .about-main {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1024px) { 
+
+    .container {
+        padding: 20% 5%;
+    }
+
+    p {
+        font-size: 3.2vmin;
+    }
+
+    .project-img {
+        width: 100%;
+        height: auto;
+        margin-right: 0px;
+        align-self: center;
+    }
+
+    .styled-list {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-content {
+        flex-direction: column;
+    }
+}
+
+

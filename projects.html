@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects</title>
+        <link rel="stylesheet" href="css/portfolio.css"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    </head>
+
+    <body>
+        <nav>
+            <a href="index.html">Home</a>
+            <a class="active" href="projects.html">Projects</a>
+            <a href="hobbies.html">Hobbies</a>
+            <a href="about.html">About</a>
+        </nav>
+        
+        <main class="container">
+            <h2>Computer Science Projects</h2>
+
+            <!-- Project 1 -->
+            <div class="card">
+                <h3>OnBoardPi</h3>
+                <div class="card-content">
+                    <img src="../images/onboardpi.png" class="project-img landscape" alt="OnBoardPi">
+                    <div>
+                        <p class="project-desc">
+                            OnBoardPi turns a Raspberry Pi or similar single board computer into a data (web) server for you car.
+                            The Pi connects to your OBDII port (for reading diagnostic data) and relays things like RPM, Speed, and temperatures
+                            via a websocket to any device who has a browser. It is made with NodeJS and Python on the backend and Angular for the
+                            web client. This is a passion project which I plan to grow into the future to have more capabilities.
+                        </p>
+
+                        <!-- List of used languages and source code link -->
+                        <ul class="styled-list">
+                            <li>TypeScript</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                            <li>SCSS</li>
+                            <li>
+                                <a href="https://github.com/bgunson/onboardpi">Source code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="card">
+                <h3>TaffyTangle</h3>
+                <div class="card-content">
+                    <img src="../images/taffytangle.gif" class="project-img" alt="OnBoardPi">
+                    <div>
+                        <p class="project-desc">
+                            A match three game made in Python for a first year assignment. It utilizes the modules 'stddraw', 'stdio', and 'color' 
+                            from the Princeton Education Booksite. It includes two difficulties, and a hint button for when you are stuck. 
+                            The difficulties each have a different number of game pieces and score targets. There is a move limit so if you do not reach the target score you lose.
+                        </p>
+
+                        <!-- List of used languages and source code link -->
+                        <ul class="styled-list">
+                            <li>
+                                Python
+                            </li>
+                            <li>
+                                <a href="https://github.com/bgunson/taffytangle">Source code</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="card">
+                <h3>Object Serialization</h3>
+                <div class="card-content">
+                    <img src="../images/json.png" class="project-img" alt="OnBoardPi">
+                    <div>
+                        <p class="project-desc">
+                            From a past assignment where I learned about reflective programming in Java, sockets and JSON serialization.
+                            The module takes user input and creates objects at runtime with custom fields and values. The server is then tasked
+                            with serializing the objects into a JSON string which are then streamed over a socket to some client.
+                            Lastly, the client upon receiving the serialized data formats the objects in a pretty form for inspection.
+                        </p>
+                        
+                        <!-- List of used languages and source code link -->
+                        <ul class="styled-list">
+                            <li>Java</li>
+                            <li>
+                                <a href="https://github.com/bgunson/object-serialization">Source code</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </body>
+
+</html>
